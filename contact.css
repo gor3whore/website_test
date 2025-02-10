@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'Nexa Bold';
+  src: url('fonts/Nexa-Bold.otf') format('opentype');
+}
+
+body {
+  background: linear-gradient(135deg, #2b0a0a 0%, #080a1b 60%, #040614 100%);
+  background-attachment: fixed; 
+  background-size: cover; 
+  min-height: 100vh; 
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nexa Bold', Arial, sans-serif;
+}
+
+@font-face {
+    font-family: 'Nexa Bold';
+    src: url('fonts/Nexa-Bold.otf') format('opentype');
+}
+
+.navbar {
+    width: 100%;
+    background-color: #2b0a0a; 
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+.navbar .nav-link {
+    color: white;
+    margin: 20px 20px;
+    text-decoration: none;
+    font-size: 20px !important;  
+    font-weight: bold;
+}    
+
+.navbar a {
+    font-size: 20px !important;
+}    
+
+    .navbar .nav-link:hover {
+        text-decoration: underline;
+    }
+
+.intro-section {
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: 45px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.contact-form button {
+  background: #00ccff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.terms-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+}
+
+.terms-container input {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+
+.terms-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.terms-popup button {
+  display: block;
+  margin: 10px auto 0;
+  background: #00ccff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+.contact-info a {
+  color: #00ccff; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}

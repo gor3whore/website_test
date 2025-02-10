@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="contact.js" defer></script>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <a href="kh_creative_updated.html" class="nav-link">Home</a>
+        <a href="more-videos.html" class="nav-link">Gallery</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact_us.html" class="nav-link">Contact</a>
+    </nav>
+    
+    <section class="intro-section">
+        <h1>Contact Us</h1>
+        <p>Get in touch with us for any inquiries or collaborations.</p>
+    </section>
+    
+    <section class="contact-form">
+        <form action="email.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <div class="terms-container">
+                <input type="checkbox" id="terms-checkbox" onclick="showTerms()" required>
+                <label for="terms-checkbox">I agree to the Terms & Conditions</label>
+            </div>
+        
+            <button type="submit" id="send-button" disabled>Send</button>
+        </form>
+        
+        <div id="terms-popup" class="terms-popup">
+            <h3>Terms & Conditions</h3>
+            <p>Scroll to the bottom to accept.</p>
+            <p>
+                1. General Terms 
+            </p>
+            <p>
+                1.1 These Terms and Conditions (“Terms”) apply to all services provided by KH Creative (“we,” “us,” or “our”) to the Client (“you,” “your”). By engaging with our services, you agree to these Terms, including any specific terms for individual services, packages, or agreements.
+            </p>
+            <p>
+                1.2 KH Creative reserves the right to amend these Terms at any time. Any changes will be communicated to the Client and will be applicable from the date specified in the update.
+            </p>
+            <p>
+                1.3 These Terms constitute a legally binding agreement. If the Client does not agree to any part of these Terms, they must not use KH Creative’s services.
+            </p>
+            <p>
+                1.4 Any modifications or amendments to these Terms must be agreed upon in writing by both KH Creative and the Client before taking effect.
+            </p>
+            <p>
+                1.5 KH Creative reserves the right to refuse service to any Client for any reason, including but not limited to breach of these Terms, non-payment, or inappropriate conduct.
+                </p>
+                <p>
+                    2. Payment Terms               
+                </p>
+                    <p>
+                    2.1 Deposit: A 50% non-refundable deposit is required for all bookings, including but not limited to videography, photography, and editing services. The deposit is due at the time of booking.
+                </p>
+                <p>
+                    2.2 Payment in Full: The remaining balance must be paid in full before the final deliverables are provided.
+                </p>
+                <p>
+                    2.3 Late Payments: Any overdue invoices will incur a late fee of 5% of the total amount due for every 7 days the payment is late. If payment is not received within 30 days, KH Creative reserves the right to suspend or terminate services.
+                </p>
+                <p>
+                    2.4 Payment Methods: We accept payment via cash, bank transfer, PayPal, and credit/debit card. Any transaction fees imposed by payment processors are the Client’s responsibility.
+                </p>
+                <p>
+                    2.5 Refunds and Chargebacks: Payments are non-refundable except as outlined in these Terms. Chargebacks or disputes raised through a financial institution without prior communication with KH Creative will result in additional administrative fees.
+                </p>
+                <p>
+                    2.6 Tax Obligations: The Client is responsible for any applicable taxes, VAT, or other levies related to the services received.                    
+                </p>
+                <p>
+                    3. Scope of Work
+                </p>
+                <p>
+                    3.1 All services provided by KH Creative are defined in the initial agreement or package chosen by the Client. Any changes to the scope of work must be agreed upon in writing before work commences.
+                </p>
+                <p>
+                    3.2 Additional Work: Any services beyond the original agreement, such as additional filming locations or extensive editing, will incur extra charges. These additional charges will be agreed upon in writing before work begins.
+                </p>
+                <p>
+                    3.3 Client Responsibilities: The Client must provide clear instructions, timely responses, and all necessary assets (e.g., branding, logos, text, footage) required for the project. KH Creative is not responsible for delays caused by the Client’s failure to provide such assets..
+            </p>
+            <p>
+                4. Wedding Bookings
+            </p>
+            <p>
+                4.1 Filming Locations: Wedding packages include one filming location. Additional locations must be communicated before the wedding date and will incur extra fees.
+            </p>
+            <p>
+                4.2 Travel Costs: Travel within 10 miles of our location is free. Additional travel beyond 10 miles will be charged at 45p per mile. Travel within London may include ULEZ or congestion charges, which the Client must cover.
+            </p>
+            <p>
+                4.3 Client Cooperation: The Client is responsible for ensuring that KH Creative has appropriate access to the venue and necessary permissions to film at the chosen location(s).                
+            </p>
+            <p>
+                5. Delivery and Timelines
+            </p>
+            <p>
+                5.1 Timeline: KH Creative will provide an estimated timeline for the delivery of final deliverables. Any Client delays, such as failure to provide timely feedback, may extend the delivery time.
+            </p>
+            <p>
+                5.2 Final Deliverables: Deliverables will be provided via the agreed method (USB, cloud storage, etc.). Alternative methods may incur additional fees.
+            </p>
+            <p>
+                5.3 Revision Policy: Revisions are subject to the terms agreed upon in the project contract. Excessive revisions beyond the agreed amount may result in additional charges.
+            </p>
+            <p>
+                6. Cancellation and Refunds
+            </p>
+            <p>
+                6.1 Client Cancellation: If the Client cancels before work begins, the 50% deposit is non-refundable. If cancellation occurs after work has commenced, the Client may be liable for additional costs based on work completed.
+            </p>
+            <p>
+                6.2 KH Creative Cancellation: KH Creative reserves the right to cancel a project if the Client breaches these Terms. If KH Creative cancels, the Client will receive all completed work and be required to pay for work completed.
+            </p>
+            <p>
+                6.3 Rescheduling: The Client may request to reschedule a project. Approval is subject to KH Creative’s availability, and additional fees may apply.
+            </p>
+            <p>
+                7. Force Majeure
+            </p>
+            <p>
+                KH Creative is not liable for delays or service failures due to circumstances beyond its control, including natural disasters, power outages, internet failures, illness, pandemics, strikes, or unforeseen emergencies.
+            </p>
+            <p>
+                8. Creative Rights
+            </p>
+            <p>
+                8.1 Ownership of Content: KH Creative retains ownership of all raw footage, project files, and intellectual property not included in the final deliverables.
+            </p>
+            <p>
+                8.2 Final Deliverables: The Client is granted a non-exclusive, non-transferable license to use the final content for the agreed purpose.
+            </p>
+            <p>
+                8.3 Portfolio Use: KH Creative retains the right to use all created content for promotional purposes unless otherwise agreed in writing.
+            </p>
+            <p>
+                9. Creative Plan Subscription Terms
+            </p>
+            <p>
+                9.1 Subscription Fee: The Client agrees to pay the monthly or annual subscription fee for the Creative Plan.
+            </p>
+            <p>
+                9.2 Minimum Commitment: A minimum three-month commitment is required. Cancellations before this period ends are not permitted.
+            </p>
+            <p>
+                9.3 Billing: Subscription fees are billed monthly. Late payments may result in suspension or termination of services.
+            </p>
+            <p>
+                9.4 Booking Credits: Booking credits roll over each month and expire if unused after 12 months. They cannot be redeemed before the three-month minimum commitment.
+            </p>
+            <p>
+                9.5 Refunds: Subscription fees are non-refundable unless KH Creative fails to deliver the agreed services.
+            </p>
+            <p>
+                10. Indemnity
+            </p>
+            <p>
+                10.1 The Client agrees to indemnify KH Creative against any legal claims, damages, or liabilities arising from their use of the delivered content.
+            </p>
+            <p>
+                11. Governing Law & Dispute Resolution
+            </p>
+            <p>
+                11.1 These Terms are governed by the laws of England and Wales.
+            </p>
+            <p>
+                11.2 Dispute Resolution: The parties will attempt to resolve disputes through mediation before pursuing legal action.
+            </p>
+            <p>
+                12. Privacy & Data Protection
+            </p>
+            <p>
+                12.1 KH Creative collects and processes Client data as necessary to deliver services. The Client agrees to KH Creative’s Privacy Policy, which outlines data handling practices.
+            </p>
+            <p>
+                12.2 Data Security: KH Creative implements reasonable security measures but is not responsible for data breaches beyond its control..
+            </p>
+            <p>
+                13. Confidentiality & Non-Disclosure
+            </p>
+            <p>
+                13.1 Any confidential information shared by either party must be kept confidential and not disclosed to third parties without prior written consent.
+            </p>
+            <p>
+                13.2 If an NDA is required, it must be agreed upon before project commencement.
+            </p>
+            <p>
+                14. Modification of Terms
+            </p>
+            <p>
+                KH Creative may update these Terms at any time. Clients will be notified of significant changes, and continued use of services implies acceptance of updated Terms.
+            </p>
+            <p>
+                15. Entire Agreement & Severability
+            </p>
+            <p>
+                15.1 These Terms constitute the entire agreement between KH Creative and the Client.
+            </p>
+            <p>
+                15.2 If any provision is found to be unenforceable, the remaining provisions shall remain in effect.
+            </p>
+            <p>
+                16. Liability Limitations
+            </p>
+            <p>
+                16.1 KH Creative is not liable for any indirect, incidental, or consequential damages arising from the use of its services.
+            </p>
+            <p>
+                16.2 The Client assumes all risks related to the use of the final deliverables. KH Creative is not responsible for any damages, lost profits, or business interruptions resulting from the use of its services.
+            </p>
+            <p>
+                16.3 In the event of technical failures, equipment malfunctions, or unforeseen errors, KH Creative’s liability will be limited to a refund of any payments made for undelivered services.                
+            </p>
+        <p>
+            17. Intellectual Property
+        </p>
+        <p>
+            17.1 KH Creative retains full intellectual property rights over all raw footage, project files, and creative assets used in the production of deliverables.
+        </p>
+        <p>
+            17.2 The Client is granted a non-exclusive, non-transferable license to use the final product for the agreed purpose. Any unauthorized reproduction, modification, or resale of the content is prohibited.
+        </p>
+        <p>
+            17.3 If the Client wishes to obtain full rights over the project files, an additional fee may be required, and an agreement must be signed.                
+        </p>
+    <p>
+        18. Use of Third-Party Materials
+    </p>
+    <p>
+        18.1 If third-party assets (e.g., stock footage, music, fonts) are used, the Client is responsible for ensuring that proper licenses are acquired if required.
+    </p>
+    <p>
+        18.2 KH Creative is not liable for copyright claims arising from the Client’s misuse of licensed materials.
+    </p>
+    <p>
+        18.3 The Client may request KH Creative to source and purchase licensed content on their behalf, with the cost being added to the final invoice.                
+    </p>
+<p>
+    19. Revisions & Client Feedback
+</p>
+<p>
+    19.1 The Client is entitled to a specified number of revisions, as outlined in their agreement. Any additional revisions beyond this limit will be charged at an hourly rate.
+</p>
+<p>
+    19.2 Feedback must be provided within a reasonable timeframe (typically within 7 days of receiving a draft). Delayed feedback may result in extended delivery timelines.
+</p>
+<p>
+    19.3 Once final approval is given, no further revisions will be made unless agreed upon separately.                    
+</p>
+<p>
+    20. Storage & Backup Policy
+</p>
+<p>
+20.1 KH Creative retains copies of project files for up to 30 days after final delivery. After this period, files may be deleted, and KH Creative is not responsible for storing backups.
+</p>
+<p>
+20.2 Clients are advised to download and securely store their files upon delivery. Additional copies or retrieval of files after 30 days may incur additional fees.
+</p>
+<p>
+20.3 If the Client requests KH Creative to store project files for an extended period, a storage fee may apply
+</p>
+<p>
+    21. Client Responsibilities
+</p>
+<p>
+    21.1 The Client is responsible for ensuring that all required permissions, permits, or approvals are obtained before any filming, photography, or production begins.
+</p>
+<p>
+    21.2 The Client must ensure that KH Creative has access to locations, people, and necessary resources for the project.
+</p>
+<p>
+    21.3 The Client is responsible for providing correct and accurate information. KH Creative is not liable for errors resulting from incorrect details provided by the Client.                   
+</p>
+<p>
+    22. Event Filming & Live Productions
+</p>
+<p>
+    22.1 For event filming, KH Creative requires a schedule, itinerary, and point of contact at least 7 days prior to the event.
+</p>
+<p>
+    22.2 KH Creative will make reasonable efforts to capture all key moments, but due to the live nature of events, it cannot guarantee the filming of specific individuals, moments, or angles unless pre-arranged.
+</p>
+<p>
+    22.3 The Client must ensure that KH Creative is granted necessary access and credentials for event venues, including parking, security clearance, and permissions to use professional equipment.                  
+</p>
+<p>
+    23. Force Majeure (Extended)
+</p>
+<p>
+    23.1 If an event outside of KH Creative’s control (such as natural disasters, acts of war, extreme weather, or government restrictions) prevents service delivery, KH Creative will not be held liable.
+</p>
+<p>
+    23.2 In such cases, KH Creative will make reasonable efforts to reschedule services or offer credit for future projects.
+</p>
+<p>
+    23.3 If rescheduling is not possible, KH Creative reserves the right to refund a portion of fees paid, deducting any expenses already incurred.    
+</p>
+<p>
+    24. Termination of Services
+</p>
+<p>
+    24.1 KH Creative reserves the right to terminate services at any time if the Client:
+</p>
+<p>
+    Violates any of these Terms.
+</p>
+<p>
+    Engages in inappropriate, abusive, or unprofessional behavior.
+</p>
+<p>
+    Fails to make payments as agreed.
+</p>
+<p>
+    24.2 If termination occurs due to Client misconduct, no refunds will be issued, and KH Creative may pursue legal action for damages.
+</p>
+<p>
+    24.3 If the Client wishes to terminate services, written notice must be provided. Any work completed up to the termination date must be paid for in full.
+    </p>
+    <p>
+        25. Website Development & Design Terms
+    </p>
+    <p>
+        25.1 All website development and design services provided by KH Creative are customized based on individual client needs. The terms, scope, and costs of website-related projects will be discussed and agreed upon in a custom quotation.
+    </p>
+    <p>
+        25.2 The quotation will outline specific deliverables, functionality, design elements, revisions, timelines, and payment structures. Any requests beyond the agreed scope will incur additional charges.
+    </p>
+    <p>
+        25.3 KH Creative will not be responsible for third-party hosting issues, domain registrations, plugin or software compatibility errors, or maintenance unless explicitly included in the service agreement.
+    </p>
+    <p>
+        25.4 The Client is responsible for providing all necessary content, including text, images, and branding materials, unless otherwise agreed. KH Creative is not liable for delays caused by the Client's failure to provide such content.
+    </p>
+    <p>
+        25.5 If the Client does not approve the website within the agreed timeline, KH Creative reserves the right to consider the project completed and issue a final invoice.
+    </p>
+    <p>
+        25.6 KH Creative retains the right to showcase completed websites in its portfolio unless the Client requests otherwise in writing before project completion.
+        </p>
+        <p>26. Rights to Outsource, Delegate, and Subcontract
+        </p>
+        <p>
+            26.1 KH Creative reserves the right to outsource, delegate, or subcontract any part of its services, including but not limited to web development, design, video editing, copywriting, and marketing, to third-party service providers, freelancers, or agencies without prior notice to or approval from the Client.
+        </p>
+        <p>
+            26.2 The Client agrees that KH Creative’s responsibility is limited to managing the final deliverables and ensuring quality control. KH Creative is not responsible for any disputes or liabilities arising between the Client and any subcontracted service provider.
+        </p>
+        <p>
+            26.3 All third-party subcontractors engaged by KH Creative are expected to adhere to strict confidentiality and quality standards. However, KH Creative shall not be liable for any delays, errors, or performance failures caused by subcontracted entities.
+        </p>
+        <p>
+            26.4 If the Client prefers that no subcontractors be used, this must be agreed upon in writing before the commencement of the project. Any such agreement may result in adjusted costs and timelines.
+            </p>
+            <p>Terms and Conditions were last updated and published on 08/02/2025</p>
+            
+            <button onclick="acceptTerms()">Accept</button>
+        </div>
+        
+        <section class="contact-info">
+            <p>Email: <a href="mailto:example@khcreative.co.uk"><kalam class="hussain"></kalam>@khcreative.co.uk</a></p>
+            <span class="divider">|</span>
+            <p>Phone: <a href="tel:07123456789">07123456789</a></p>
+        </section>
